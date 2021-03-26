@@ -81,3 +81,18 @@ exports[`Storyshots TextCell Default 1`] = `
   </span>
 </td>
 `;
+
+exports[`Storyshots TooltipCell Default 1`] = `
+<td
+  className="align-middle"
+>
+  <div
+    onBlur={[Function]}
+    onFocus={[Function]}
+    onMouseOut={[Function]}
+    onMouseOver={[Function]}
+  >
+    Label
+  </div>
+</td>
+`;

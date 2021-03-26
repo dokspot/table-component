@@ -5,3 +5,13 @@ exports[`Storyshots Cell Default 1`] = `
   className="align-middle"
 />
 `;
+
+exports[`Storyshots TextCell Default 1`] = `
+<td
+  className="align-middle"
+>
+  <span>
+    Hello World
+  </span>
+</td>
+`;

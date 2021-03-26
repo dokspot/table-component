@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
 export default function Cell({ children }) {
   return (<td className='align-middle'>{children}</td>)

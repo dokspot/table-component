@@ -10,7 +10,7 @@ export default function TextCell({ loading, text }) {
   )
 }
 
-TextCell.propTypes ={
+TextCell.propTypes = {
   loading: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
 }

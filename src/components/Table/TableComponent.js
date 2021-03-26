@@ -1,5 +1,6 @@
 import { Table } from 'react-bootstrap'
 import Cell from '../Cell/Cell'
+import Toolbar from '../Toolbar/Toolbar'
 import PropTypes from 'prop-types'
 import { useTable } from 'react-table'
 import { times } from 'lodash'
@@ -27,20 +28,26 @@ export default function TableComponent({ loading, useData, useColumns }) {
     getTableBodyProps,
     headerGroups,
     rows,
-    prepareRow
+    prepareRow,
+    selectedFlatRows
   } = tableInstance
 
   if (loading) {
     return (
-      <Table>
-        <thead><LoadingHeader /></thead>
-        <tbody>{times(10, n => <LoadingRow key={n} />)}</tbody>
-      </Table>
+      <>
+        <Toolbar></Toolbar>
+        <Table>
+          <thead><LoadingHeader /></thead>
+          <tbody>{times(10, n => <LoadingRow key={n} />)}</tbody>
+        </Table>
+      </>
     )
   }
+  console.log(selectedFlatRows)
 
   return (
     <>
+      <Toolbar></Toolbar>
       <Table hover {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

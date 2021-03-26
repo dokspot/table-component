@@ -5,5 +5,5 @@ export default function Cell({ children }) {
 }
 
 Cell.propTypes ={
-  children: PropTypes.element.isRequired
+  children: PropTypes.node.isRequired
 }

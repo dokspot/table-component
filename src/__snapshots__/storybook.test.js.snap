@@ -1,5 +1,59 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Storyshots BadgeCell Default 1`] = `
+<td
+  className="align-middle"
+>
+  <div
+    className="d-flex align-items-center"
+  >
+    <span>
+      Badge Cell
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-primary"
+    >
+      Primary
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-secondary"
+    >
+      Secondary
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-success"
+    >
+      Success
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-danger"
+    >
+      Danger
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-warning"
+    >
+      Warning
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-info"
+    >
+      Info
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-light"
+    >
+      Light
+    </span>
+    <span
+      className="ml-1 badge badge-pill badge-dark"
+    >
+      Dark
+    </span>
+  </div>
+</td>
+`;
+
 exports[`Storyshots Cell Default 1`] = `
 <td
   className="align-middle"

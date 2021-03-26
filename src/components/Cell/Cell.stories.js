@@ -10,5 +10,12 @@ const Template = args => <Cell {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
+  loading: false,
+  children: <></>
+}
+
+export const Loading = Template.bind({})
+Loading.args = {
+  loading: true,
   children: <></>
 }

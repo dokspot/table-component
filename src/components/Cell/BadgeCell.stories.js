@@ -10,6 +10,7 @@ const Template = args => <BadgeCell {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
+  loading: false,
   text: 'Badge Cell',
   badges: [
     { text: 'Primary', variant: 'primary' },

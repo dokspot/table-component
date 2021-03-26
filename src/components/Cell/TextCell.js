@@ -1,14 +1,16 @@
 import Cell from './Cell'
 import PropTypes from 'prop-types'
 
-export default function TextCell({ text }) {
+export default function TextCell({ loading, text }) {
+
   return (
-    <Cell>
+    <Cell loading={loading}>
       <span>{text}</span>
     </Cell>
   )
 }
 
 TextCell.propTypes ={
+  loading: PropTypes.bool.isRequired,
   text: PropTypes.string.isRequired
 }

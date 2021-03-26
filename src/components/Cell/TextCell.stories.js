@@ -10,5 +10,6 @@ const Template = args => <TextCell {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  text: 'Hello World'
+  text: 'Hello World',
+  loading: false
 }

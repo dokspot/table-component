@@ -60,6 +60,18 @@ exports[`Storyshots Cell Default 1`] = `
 />
 `;
 
+exports[`Storyshots Cell Loading 1`] = `
+<td
+  className="align-middle"
+>
+  <span
+    className="glow-text"
+  >
+    Loading
+  </span>
+</td>
+`;
+
 exports[`Storyshots TextCell Default 1`] = `
 <td
   className="align-middle"

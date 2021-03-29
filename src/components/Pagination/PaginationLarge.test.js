@@ -1,18 +1,14 @@
 import { render, fireEvent, screen } from '@testing-library/react'
-import PaginationLarge from './PaginationLarge'
+import { Default } from './PaginationLarge.stories'
 
 test('onClick - previousPage', () => {
   const previousPage = jest.fn()
   const nextPage = jest.fn()
   render(
-    <PaginationLarge
+    <Default
+      {...Default.args}
       previousPage={previousPage}
-      canPreviousPage={true}
       nextPage={nextPage}
-      canNextPage={true}
-      pageIndex={9}
-      pageCount={15}
-      gotoPage={jest.fn()}
     />
   )
   fireEvent.click(screen.getByTestId('previousPage'))

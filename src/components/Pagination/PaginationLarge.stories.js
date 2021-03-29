@@ -15,8 +15,8 @@ const Template = args => <PaginationLarge {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  canPreviousPage: false,
+  canPreviousPage: true,
   canNextPage: true,
   pageCount: 20,
-  pageIndex: 0,
+  pageIndex: 10,
 }

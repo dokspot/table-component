@@ -665,7 +665,7 @@ Array [
   <button
     className="btn btn-white"
     data-testid="previousPage"
-    disabled={true}
+    disabled={false}
     onClick={[Function]}
     type="button"
   >
@@ -689,22 +689,13 @@ Array [
     </svg>
   </button>,
   <button
-    className="text-primary btn btn-white"
-    data-testid="button"
-    disabled={false}
-    onClick={[Function]}
-    type="button"
-  >
-    1
-  </button>,
-  <button
     className="btn btn-white"
     data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
   >
-    2
+    1
   </button>,
   <button
     className="btn btn-white"
@@ -737,7 +728,49 @@ Array [
     onClick={[Function]}
     type="button"
   >
-    19
+    10
+  </button>,
+  <button
+    className="text-primary btn btn-white"
+    data-testid="button"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    11
+  </button>,
+  <button
+    className="btn btn-white"
+    data-testid="button"
+    disabled={false}
+    onClick={[Function]}
+    type="button"
+  >
+    12
+  </button>,
+  <button
+    className="btn btn-white"
+    disabled={true}
+    type="button"
+  >
+    <svg
+      aria-hidden="true"
+      className="StyledIconBase-ea9ulj-0 cKCFNq"
+      fill="currentColor"
+      focusable="false"
+      height={16}
+      viewBox="0 0 24 24"
+      width={16}
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M0 0h24v24H0z"
+        fill="none"
+      />
+      <path
+        d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+      />
+    </svg>
   </button>,
   <button
     className="btn btn-white"

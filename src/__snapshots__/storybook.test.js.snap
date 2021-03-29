@@ -144,7 +144,7 @@ exports[`Storyshots Filter/GlobalFilter Default 1`] = `
   </div>
   <input
     className="form-control"
-    data-testid="global-filter"
+    data-testid="input"
     onChange={[Function]}
     placeholder="4 records..."
     value=""

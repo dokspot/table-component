@@ -5,6 +5,7 @@ import { times } from 'lodash'
 export default {
   component: SelectPageSize,
   title: 'Pagination/SelectPageSize',
+  argTypes: { setPageSize: { action: 'setPageSize' } }
 }
 
 const Template = args => <SelectPageSize {...args} />
@@ -12,6 +13,5 @@ const Template = args => <SelectPageSize {...args} />
 export const Default = Template.bind({})
 Default.args = {
   rows: times(200, n => n),
-  setPageSize: () => {},
   pageSize: 10,
 }

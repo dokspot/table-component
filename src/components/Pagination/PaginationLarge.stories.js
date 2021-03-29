@@ -3,16 +3,18 @@ import PaginationLarge from './PaginationLarge'
 
 export default {
   component: PaginationLarge,
-  title: 'Pagination/PaginationLarge'
+  title: 'Pagination/PaginationLarge',
+  argTypes: { 
+    gotoPage: { action: 'gotoPage' },
+    previousPage: { action: 'previousPage' },
+    nextPage: { action: 'nextPage' }
+  }
 }
 
 const Template = args => <PaginationLarge {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  gotoPage: () => {},
-  previousPage: () => {},
-  nextPage: () => {},
   canPreviousPage: false,
   canNextPage: true,
   pageCount: 20,

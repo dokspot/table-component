@@ -10,7 +10,7 @@ export default function PaginationButton({
       variant='white'
       className={ pageNumber === pageIndex ? 'text-primary' : '' }
       onClick={() => gotoPage(pageNumber)}
-      data-testid='pagination-btn'
+      data-testid='button'
     >{ pageNumber + 1 }</Button>
   )
 }

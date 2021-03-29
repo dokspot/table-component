@@ -17,7 +17,7 @@ export default function SelectPageSize({
           setPageSize(Number(e.target.value))
         }}
         style={{ width: '56px', display: 'inline' }}
-        data-testid='pageSize-input'
+        data-testid='input'
       >
         {[10, 20, 30, 40, 50].map(pageSize => (
           <option key={pageSize} value={pageSize}>{pageSize}</option>

@@ -20,7 +20,7 @@ export default function InputPage({
           gotoPage(page)
         }}
         style={{ width: '48px', display: 'inline' }}
-        data-testid='gotoPage-input'
+        data-testid='input'
       />
     </>
   )

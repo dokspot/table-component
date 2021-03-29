@@ -106,7 +106,7 @@ Array [
   </span>,
   <input
     className="form-control form-control-sm"
-    data-testid="gotoPage-input"
+    data-testid="input"
     defaultValue={1}
     max={5}
     min={1}
@@ -139,7 +139,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
   </span>
   <select
     className="form-control form-control-sm"
-    data-testid="pageSize-input"
+    data-testid="input"
     onChange={[Function]}
     style={
       Object {
@@ -194,7 +194,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
     >
       <button
         className="btn btn-white"
-        data-testid="previousPage-btn"
+        data-testid="previousPage"
         disabled={true}
         onClick={[Function]}
         type="button"
@@ -220,7 +220,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
       </button>
       <button
         className="text-primary btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -229,7 +229,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -262,7 +262,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -271,7 +271,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -280,7 +280,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="nextPage-btn"
+        data-testid="nextPage"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -314,7 +314,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
     </span>
     <input
       className="form-control form-control-sm"
-      data-testid="gotoPage-input"
+      data-testid="input"
       defaultValue={1}
       max={20}
       min={1}
@@ -348,7 +348,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
   </span>
   <select
     className="form-control form-control-sm"
-    data-testid="pageSize-input"
+    data-testid="input"
     onChange={[Function]}
     style={
       Object {
@@ -403,7 +403,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
     >
       <button
         className="text-primary btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -412,7 +412,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -421,7 +421,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -430,7 +430,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -439,7 +439,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
       </button>
       <button
         className="btn btn-white"
-        data-testid="pagination-btn"
+        data-testid="button"
         disabled={false}
         onClick={[Function]}
         type="button"
@@ -456,7 +456,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
     </span>
     <input
       className="form-control form-control-sm"
-      data-testid="gotoPage-input"
+      data-testid="input"
       defaultValue={1}
       max={5}
       min={1}
@@ -477,7 +477,7 @@ exports[`Storyshots Pagination/PaginationAlt Default 1`] = `
 Array [
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -510,7 +510,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -519,7 +519,7 @@ Array [
   </button>,
   <button
     className="text-primary btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -528,7 +528,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -561,7 +561,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -574,7 +574,7 @@ Array [
 exports[`Storyshots Pagination/PaginationButton Default 1`] = `
 <button
   className="btn btn-white"
-  data-testid="pagination-btn"
+  data-testid="button"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -586,7 +586,7 @@ exports[`Storyshots Pagination/PaginationButton Default 1`] = `
 exports[`Storyshots Pagination/PaginationButton Primary 1`] = `
 <button
   className="text-primary btn btn-white"
-  data-testid="pagination-btn"
+  data-testid="button"
   disabled={false}
   onClick={[Function]}
   type="button"
@@ -599,7 +599,7 @@ exports[`Storyshots Pagination/PaginationFL2 Default 1`] = `
 Array [
   <button
     className="text-primary btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -608,7 +608,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -641,7 +641,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -650,7 +650,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -664,7 +664,7 @@ exports[`Storyshots Pagination/PaginationLarge Default 1`] = `
 Array [
   <button
     className="btn btn-white"
-    data-testid="previousPage-btn"
+    data-testid="previousPage"
     disabled={true}
     onClick={[Function]}
     type="button"
@@ -690,7 +690,7 @@ Array [
   </button>,
   <button
     className="text-primary btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -699,7 +699,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -732,7 +732,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -741,7 +741,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -750,7 +750,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="nextPage-btn"
+    data-testid="nextPage"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -781,7 +781,7 @@ exports[`Storyshots Pagination/PaginationMedium Default 1`] = `
 Array [
   <button
     className="text-primary btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -790,7 +790,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -799,7 +799,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -808,7 +808,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -817,7 +817,7 @@ Array [
   </button>,
   <button
     className="btn btn-white"
-    data-testid="pagination-btn"
+    data-testid="button"
     disabled={false}
     onClick={[Function]}
     type="button"
@@ -836,7 +836,7 @@ Array [
   </span>,
   <select
     className="form-control form-control-sm"
-    data-testid="pageSize-input"
+    data-testid="input"
     onChange={[Function]}
     style={
       Object {
@@ -901,7 +901,7 @@ Array [
       </span>
       <select
         className="form-control form-control-sm"
-        data-testid="pageSize-input"
+        data-testid="input"
         onChange={[Function]}
         style={
           Object {
@@ -955,7 +955,7 @@ Array [
         >
           <button
             className="btn btn-white"
-            data-testid="previousPage-btn"
+            data-testid="previousPage"
             disabled={true}
             onClick={[Function]}
             type="button"
@@ -981,7 +981,7 @@ Array [
           </button>
           <button
             className="btn btn-white"
-            data-testid="pagination-btn"
+            data-testid="button"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -990,7 +990,7 @@ Array [
           </button>
           <button
             className="btn btn-white"
-            data-testid="pagination-btn"
+            data-testid="button"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -999,7 +999,7 @@ Array [
           </button>
           <button
             className="text-primary btn btn-white"
-            data-testid="pagination-btn"
+            data-testid="button"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -1008,7 +1008,7 @@ Array [
           </button>
           <button
             className="btn btn-white"
-            data-testid="pagination-btn"
+            data-testid="button"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -1017,7 +1017,7 @@ Array [
           </button>
           <button
             className="btn btn-white"
-            data-testid="pagination-btn"
+            data-testid="button"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -1026,7 +1026,7 @@ Array [
           </button>
           <button
             className="btn btn-white"
-            data-testid="nextPage-btn"
+            data-testid="nextPage"
             disabled={false}
             onClick={[Function]}
             type="button"
@@ -1060,7 +1060,7 @@ Array [
         </span>
         <input
           className="form-control form-control-sm"
-          data-testid="gotoPage-input"
+          data-testid="input"
           defaultValue={NaN}
           max={20}
           min={1}

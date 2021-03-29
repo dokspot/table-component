@@ -16,12 +16,12 @@ export default function PaginationLarge({
 
   return (
     <>
-      <Button variant='white' onClick={() => previousPage()} disabled={!canPreviousPage} data-testid='previousPage-btn'><ChevronLeft size={20} /></Button>
+      <Button variant='white' onClick={() => previousPage()} disabled={!canPreviousPage} data-testid='previousPage'><ChevronLeft size={20} /></Button>
       { isFL2
         ? <PaginationFL2 gotoPage={gotoPage} pageIndex={pageIndex} pageCount={pageCount} />
         : <PaginationAlt gotoPage={gotoPage} pageIndex={pageIndex} pageCount={pageCount} />
       }
-      <Button variant='white' onClick={() => nextPage()} disabled={!canNextPage} data-testid='nextPage-btn'><ChevronRight size={20} /></Button>
+      <Button variant='white' onClick={() => nextPage()} disabled={!canNextPage} data-testid='nextPage'><ChevronRight size={20} /></Button>
     </>
   )
 }

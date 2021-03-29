@@ -3,7 +3,7 @@ import TooltipCell from './TooltipCell'
 
 export default {
   component: TooltipCell,
-  title: 'TooltipCell'
+  title: 'Cell/TooltipCell'
 }
 
 const Template = args => <TooltipCell {...args} />

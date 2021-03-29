@@ -3,7 +3,7 @@ import TextCell from './TextCell'
 
 export default {
   component: TextCell,
-  title: 'TextCell'
+  title: 'Cell/TextCell'
 }
 
 const Template = args => <TextCell {...args} />

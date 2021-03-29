@@ -3,7 +3,7 @@ import Cell from './Cell'
 
 export default {
   component: Cell,
-  title: 'Cell'
+  title: 'Cell/Cell'
 }
 
 const Template = args => <Cell {...args} />

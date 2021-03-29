@@ -3,7 +3,7 @@ import BadgeCell from './BadgeCell'
 
 export default {
   component: BadgeCell,
-  title: 'BadgeCell'
+  title: 'Cell/BadgeCell'
 }
 
 const Template = args => <BadgeCell {...args} />

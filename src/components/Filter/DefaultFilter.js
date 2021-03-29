@@ -1,3 +1,5 @@
+import { useState } from 'react'
+import { useAsyncDebounce } from 'react-table'
 import { Form } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 
@@ -5,13 +7,17 @@ export default function DefaultFilter({
   column: { filterValue, preFilteredRows, setFilter }
 }) {
   const count = preFilteredRows.length
+  const [value, setValue] = useState(filterValue)
+  const onChange = useAsyncDebounce(value => {
+    setFilter(value || undefined)
+  }, 200)
 
   return (
     <Form.Control
-      value={filterValue || ''}
+      value={value || ''}
       onChange={e => {
-        setFilter(e.target.value)
-        // setFilter(e.target.value || undefined) // Set undefined to remove the filter entirely
+        setValue(e.target.value)
+        onChange(e.target.value) // Set undefined to remove the filter entirely
       }}
       placeholder={`Search ${count} records...`}
       data-testid='input'

@@ -1,5 +1,6 @@
 import PaginationButton from './PaginationButton'
 import { times } from 'lodash'
+import PropTypes from 'prop-types'
 
 export default function PaginationMedium({
   gotoPage,
@@ -18,4 +19,10 @@ export default function PaginationMedium({
       ))}
     </>
   )
+}
+
+PaginationMedium.propTypes = {
+  gotoPage: PropTypes.func.isRequired,
+  pageIndex: PropTypes.number.isRequired,
+  pageCount: PropTypes.number.isRequired
 }

@@ -1,6 +1,7 @@
 import PaginationButton from './PaginationButton'
 import { MoreHoriz } from '@styled-icons/material'
 import { Button } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export default function PaginationFL2({
   gotoPage,
@@ -16,4 +17,10 @@ export default function PaginationFL2({
       <PaginationButton pageIndex={pageIndex} gotoPage={gotoPage} pageNumber={pageCount - 1} />
     </>
   )
+}
+
+PaginationFL2.propTypes = {
+  gotoPage: PropTypes.func.isRequired,
+  pageIndex: PropTypes.number.isRequired,
+  pageCount: PropTypes.number.isRequired
 }

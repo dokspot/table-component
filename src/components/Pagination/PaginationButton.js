@@ -1,4 +1,5 @@
 import { Button } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export default function PaginationButton({
   gotoPage,
@@ -13,4 +14,10 @@ export default function PaginationButton({
       data-testid='button'
     >{ pageNumber + 1 }</Button>
   )
+}
+
+PaginationButton.propTypes = {
+  gotoPage: PropTypes.func.isRequired,
+  pageIndex: PropTypes.number.isRequired,
+  pageNumber: PropTypes.number.isRequired
 }

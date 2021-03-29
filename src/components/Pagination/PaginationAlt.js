@@ -2,6 +2,7 @@ import React from 'react'
 import PaginationButton from './PaginationButton'
 import { MoreHoriz } from '@styled-icons/material'
 import { Button } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export default function PaginationAlt({
   gotoPage,
@@ -19,4 +20,10 @@ export default function PaginationAlt({
       <PaginationButton pageIndex={pageIndex} gotoPage={gotoPage} pageNumber={pageCount - 1} />
     </>
   )
+}
+
+PaginationAlt.propTypes = {
+  gotoPage: PropTypes.func.isRequired,
+  pageIndex: PropTypes.number.isRequired,
+  pageCount: PropTypes.number.isRequired
 }

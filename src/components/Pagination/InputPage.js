@@ -1,5 +1,6 @@
 import React from 'react'
 import { Form } from 'react-bootstrap'
+import PropTypes from 'prop-types'
 
 export default function InputPage({
   gotoPage,
@@ -24,4 +25,10 @@ export default function InputPage({
       />
     </>
   )
+}
+
+InputPage.propTypes = {
+  gotoPage: PropTypes.func.isRequired,
+  pageIndex: PropTypes.number.isRequired,
+  pageCount: PropTypes.number.isRequired
 }

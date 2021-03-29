@@ -2,6 +2,7 @@ import { Button } from 'react-bootstrap'
 import { ChevronLeft, ChevronRight } from '@styled-icons/material'
 import PaginationFL2 from './PaginationFL2'
 import PaginationAlt from './PaginationAlt'
+import PropTypes from 'prop-types'
 
 export default function PaginationLarge({
   previousPage,
@@ -24,4 +25,14 @@ export default function PaginationLarge({
       <Button variant='white' onClick={() => nextPage()} disabled={!canNextPage} data-testid='nextPage'><ChevronRight size={20} /></Button>
     </>
   )
+}
+
+PaginationLarge.protoTypes = {
+  previousPage: PropTypes.func.isRequired,
+  canPreviousPage: PropTypes.bool.isRequired,
+  nextPage: PropTypes.func.isRequired,
+  canNextPage: PropTypes.bool.isRequired,
+  pageIndex: PropTypes.number.isRequired,
+  pageCount: PropTypes.number.isRequired,
+  gotoPage: PropTypes.func.isRequired,
 }

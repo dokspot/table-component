@@ -97,6 +97,16 @@ exports[`Storyshots Cell/TooltipCell Default 1`] = `
 </td>
 `;
 
+exports[`Storyshots Filter/DefaultFilter Default 1`] = `
+<input
+  className="form-control"
+  data-testid="input"
+  onChange={[Function]}
+  placeholder="Search 4 records..."
+  value=""
+/>
+`;
+
 exports[`Storyshots Pagination/InputPage Default 1`] = `
 Array [
   <span

@@ -1,8 +1,9 @@
 import { Table } from 'react-bootstrap'
 import Cell from '../Cell/Cell'
 import Toolbar from '../Toolbar/Toolbar'
+import Pagination from '../Pagination/Pagination'
 import PropTypes from 'prop-types'
-import { useTable } from 'react-table'
+import { useTable, usePagination } from 'react-table'
 import { times } from 'lodash'
 
 function LoadingHeader() {
@@ -22,14 +23,25 @@ function LoadingRow() {
 }
 
 export default function TableComponent({ loading, useData, useColumns }) {
-  const tableInstance = useTable({ data: useData(), columns: useColumns() })
+  const tableInstance = useTable(
+    { data: useData(), columns: useColumns() },
+    usePagination
+  )
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
     prepareRow,
-    selectedFlatRows
+    canPreviousPage,
+    canNextPage,
+    pageCount,
+    gotoPage,
+    nextPage,
+    previousPage,
+    setPageSize,
+    pageIndex,
+    pageSize,
   } = tableInstance
 
   if (loading) {
@@ -43,11 +55,23 @@ export default function TableComponent({ loading, useData, useColumns }) {
       </>
     )
   }
-  console.log(selectedFlatRows)
 
   return (
     <>
-      <Toolbar></Toolbar>
+      <Toolbar>
+        <Pagination
+          rows={rows}
+          canNextPage={canNextPage}
+          canPreviousPage={canPreviousPage}
+          gotoPage={gotoPage}
+          nextPage={nextPage}
+          pageCount={pageCount}
+          pageIndex={pageIndex}
+          pageSize={pageSize}
+          setPageSize={setPageSize}
+          previousPage={previousPage}
+        />
+      </Toolbar>
       <Table hover {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (

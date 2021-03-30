@@ -1,8 +1,9 @@
 import React from 'react'
 import Overlay from './Overlay'
 import GlobalFilter from '../../Filter/GlobalFilter'
+import PropTypes from 'prop-types'
 
-function FilterToolbar({
+export default function FilterToolbar({
   headerGroups,
   preGlobalFilteredRows,
   globalFilter,
@@ -21,4 +22,10 @@ function FilterToolbar({
   )
 }
 
-export default FilterToolbar
+FilterToolbar.propTypes = {
+  headerGroups: PropTypes.array,
+  preGlobalFilteredRows: PropTypes.array,
+  globalFilter: PropTypes.string,
+  setGlobalFilter: PropTypes.func,
+  filters: PropTypes.array
+}

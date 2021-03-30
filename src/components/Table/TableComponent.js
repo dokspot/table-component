@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/rules-of-hooks */
 import { Table } from 'react-bootstrap'
 import Cell from '../Cell/Cell'
 import Toolbar from '../Toolbar/Toolbar'
@@ -5,6 +6,7 @@ import Pagination from '../Pagination/Pagination'
 import FilterToolbar from '../Toolbar/FilterToolbar/FilterToolbar'
 import PropTypes from 'prop-types'
 import { useTable, useFilters, useGlobalFilter, usePagination, useRowSelect } from 'react-table'
+import useSelectionColumn from '../Hooks/useSelectionColumn'
 import { times } from 'lodash'
 
 function LoadingHeader() {
@@ -30,6 +32,7 @@ export default function TableComponent({ loading, useData, useColumns }) {
     useGlobalFilter,
     usePagination,
     useRowSelect,
+    hooks => useSelectionColumn(hooks)
   )
   const {
     getTableProps,

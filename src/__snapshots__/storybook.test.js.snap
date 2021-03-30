@@ -7764,6 +7764,244 @@ exports[`Storyshots Toolbar Filter 1`] = `
 </div>
 `;
 
+exports[`Storyshots Toolbar Filter N Pagination 1`] = `
+<div
+  className="d-flex justify-content-between toolbar"
+>
+  <div
+    className="d-flex justify-content-start align-items-center"
+    style={
+      Object {
+        "height": "100%",
+      }
+    }
+  >
+    <button
+      className="btn btn-link btn-sm"
+      data-testid="btn"
+      disabled={false}
+      onClick={[Function]}
+      style={
+        Object {
+          "lineHeight": "20px",
+        }
+      }
+      type="button"
+    >
+      <span
+        className="mr-1"
+        style={
+          Object {
+            "verticalAlign": "middle",
+          }
+        }
+      >
+        Filters
+      </span>
+      <svg
+        aria-hidden="true"
+        className="StyledIconBase-ea9ulj-0 cKCFNq"
+        fill="currentColor"
+        focusable="false"
+        height={20}
+        viewBox="0 0 24 24"
+        width={20}
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 0h24v24H0z"
+          fill="none"
+        />
+        <path
+          d="M10 18h4v-2h-4v2zM3 6v2h18V6H3zm3 7h12v-2H6v2z"
+        />
+      </svg>
+    </button>
+    <div
+      className="align-middle ml-2 input-group input-group-sm"
+      style={
+        Object {
+          "width": "initial",
+        }
+      }
+    >
+      <div
+        className="input-group-prepend"
+      >
+        <span
+          className="input-group-text"
+        >
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 cKCFNq"
+            fill="currentColor"
+            focusable="false"
+            height={16}
+            viewBox="0 0 24 24"
+            width={16}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0016 9.5 6.5 6.5 0 109.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+            />
+          </svg>
+        </span>
+      </div>
+      <input
+        className="form-control"
+        data-testid="input"
+        onChange={[Function]}
+        placeholder="0 records..."
+        value=""
+      />
+    </div>
+  </div>
+  <div
+    className="d-flex justify-content-end align-items-center text-muted"
+  >
+    <div
+      className="mr-2"
+    >
+      50
+       Results
+    </div>
+    <span
+      className="mr-1"
+    >
+      Show:
+    </span>
+    <select
+      className="form-control form-control-sm"
+      data-testid="input"
+      onChange={[Function]}
+      style={
+        Object {
+          "display": "inline",
+          "width": "56px",
+        }
+      }
+      value={10}
+    >
+      <option
+        value={10}
+      >
+        10
+      </option>
+      <option
+        value={20}
+      >
+        20
+      </option>
+      <option
+        value={30}
+      >
+        30
+      </option>
+      <option
+        value={40}
+      >
+        40
+      </option>
+      <option
+        value={50}
+      >
+        50
+      </option>
+      <option
+        value={50}
+      >
+        All
+      </option>
+    </select>
+    <div
+      className="mr-2"
+    >
+      <div
+        className="btn-group btn-group-sm"
+        role="group"
+        style={
+          Object {
+            "verticalAlign": "inherit",
+          }
+        }
+      >
+        <button
+          className="text-primary btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          3
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          4
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          5
+        </button>
+      </div>
+    </div>
+    <div>
+      <span
+        className="mr-1"
+      >
+        Go to page:
+      </span>
+      <input
+        className="form-control form-control-sm"
+        data-testid="input"
+        defaultValue={1}
+        max={5}
+        min={1}
+        onChange={[Function]}
+        style={
+          Object {
+            "display": "inline",
+            "width": "48px",
+          }
+        }
+        type="number"
+      />
+    </div>
+  </div>
+</div>
+`;
+
 exports[`Storyshots Toolbar Selection 1`] = `
 <div
   className="d-flex justify-content-between toolbar"

@@ -9,7 +9,7 @@ export default function InputPage({
 }) {
   return (
     <>
-      <span className='mr-1'>Go to page:</span>
+      <span className='mr-1'>Page:</span>
       <Form.Control
         type='number'
         size='sm'

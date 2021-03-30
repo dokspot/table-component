@@ -44,8 +44,8 @@ SelectFilter.propTypes = {
     filterValue: PropTypes.string,
     setFilter: PropTypes.func.isRequired,
     preFilteredRows: PropTypes.arrayOf(PropTypes.shape({
-      values: PropTypes.array
+      values: PropTypes.object
     })).isRequired,
-    id: PropTypes.number.isRequired
+    id: PropTypes.string.isRequired
   })
 }

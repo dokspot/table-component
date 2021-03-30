@@ -2,8 +2,9 @@ import { Table } from 'react-bootstrap'
 import Cell from '../Cell/Cell'
 import Toolbar from '../Toolbar/Toolbar'
 import Pagination from '../Pagination/Pagination'
+import FilterToolbar from '../Toolbar/FilterToolbar/FilterToolbar'
 import PropTypes from 'prop-types'
-import { useTable, usePagination } from 'react-table'
+import { useTable, useFilters, useGlobalFilter, usePagination, useRowSelect } from 'react-table'
 import { times } from 'lodash'
 
 function LoadingHeader() {
@@ -25,13 +26,17 @@ function LoadingRow() {
 export default function TableComponent({ loading, useData, useColumns }) {
   const tableInstance = useTable(
     { data: useData(), columns: useColumns() },
-    usePagination
+    useFilters,
+    useGlobalFilter,
+    usePagination,
+    useRowSelect,
   )
   const {
     getTableProps,
     getTableBodyProps,
     headerGroups,
     rows,
+    page,
     prepareRow,
     canPreviousPage,
     canNextPage,
@@ -40,8 +45,9 @@ export default function TableComponent({ loading, useData, useColumns }) {
     nextPage,
     previousPage,
     setPageSize,
-    pageIndex,
-    pageSize,
+    preGlobalFilteredRows,
+    setGlobalFilter,
+    state: { pageIndex, pageSize, filters, globalFilter }
   } = tableInstance
 
   if (loading) {
@@ -59,6 +65,13 @@ export default function TableComponent({ loading, useData, useColumns }) {
   return (
     <>
       <Toolbar>
+        <FilterToolbar
+           headerGroups={headerGroups}
+           preGlobalFilteredRows={preGlobalFilteredRows}
+           globalFilter={globalFilter}
+           setGlobalFilter={setGlobalFilter}
+           filters={filters}
+        />
         <Pagination
           rows={rows}
           canNextPage={canNextPage}
@@ -83,7 +96,7 @@ export default function TableComponent({ loading, useData, useColumns }) {
           ))}
         </thead>
         <tbody {...getTableBodyProps()}>
-          {rows.map((row) => {
+          {page.map((row) => {
             prepareRow(row)
             return (
               <tr {...row.getRowProps()}>

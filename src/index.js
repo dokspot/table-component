@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import TableComponent from './components/Table/TableComponent'
+import useData from './data/hooks/useData'
+import useColumns from './data/hooks/useColumns'
+import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <TableComponent useData={useData} useColumns={useColumns} loading={false} />
   </React.StrictMode>,
   document.getElementById('root')
 );

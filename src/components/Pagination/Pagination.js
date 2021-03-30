@@ -19,7 +19,7 @@ export default function Pagination({
 }) {
   return (
     <div className='d-flex justify-content-end align-items-center text-muted'>
-      <div className="mr-2">{rows.length} Results</div>
+      <div className="mr-2">{rows.length} records</div>
       <SelectPageSize rows={rows} pageSize={pageSize} setPageSize={setPageSize} />
       <div className="mr-2">
         <ButtonGroup size='sm' style={{ verticalAlign: 'inherit' }}>

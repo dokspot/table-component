@@ -7,7 +7,13 @@ export default forwardRef(
     const resolvedRef = ref || defaultRef
 
     useEffect(() => {
-      resolvedRef.current.indeterminate = indeterminate
+      if (
+        resolvedRef !== undefined &&
+        resolvedRef.current !== undefined &&
+        resolvedRef.current !== null
+      ) {
+        resolvedRef.current.indeterminate = indeterminate
+      }
     }, [resolvedRef, indeterminate])
 
     return (<input type="checkbox" ref={resolvedRef} {...rest} />)

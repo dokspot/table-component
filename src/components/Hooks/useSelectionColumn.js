@@ -13,7 +13,7 @@ export default function useSelectColumn(hooks) {
       // The cell can use the individual row's getToggleRowSelectedProps method
       // to the render a checkbox
       Cell: ({ row }) => (
-        <Cell>
+        <Cell loading={false}>
           <IndeterminateCheckbox {...row.getToggleRowSelectedProps()} />
         </Cell>
       )

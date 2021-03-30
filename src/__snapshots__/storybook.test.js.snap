@@ -1313,6 +1313,22 @@ Array [
           colSpan={1}
           role="columnheader"
         >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle All Current Page Rows Selected"
+            type="checkbox"
+          />
+        </th>
+        <th
+          colSpan={1}
+          role="columnheader"
+        >
           Name
         </th>
         <th
@@ -1335,6 +1351,21 @@ Array [
       <tr
         role="row"
       >
+        <td
+          className="align-middle"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
         <td
           className="align-middle"
         >
@@ -1368,6 +1399,21 @@ Array [
         <td
           className="align-middle"
         >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="align-middle"
+        >
           <span>
             Item 1
           </span>
@@ -1395,6 +1441,21 @@ Array [
       <tr
         role="row"
       >
+        <td
+          className="align-middle"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
         <td
           className="align-middle"
         >
@@ -1428,6 +1489,21 @@ Array [
         <td
           className="align-middle"
         >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="align-middle"
+        >
           <span>
             Item 3
           </span>
@@ -1455,6 +1531,21 @@ Array [
       <tr
         role="row"
       >
+        <td
+          className="align-middle"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
         <td
           className="align-middle"
         >
@@ -1488,6 +1579,21 @@ Array [
         <td
           className="align-middle"
         >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="align-middle"
+        >
           <span>
             Item 5
           </span>
@@ -1515,6 +1621,21 @@ Array [
       <tr
         role="row"
       >
+        <td
+          className="align-middle"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
         <td
           className="align-middle"
         >
@@ -1548,6 +1669,21 @@ Array [
         <td
           className="align-middle"
         >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="align-middle"
+        >
           <span>
             Item 7
           </span>
@@ -1578,6 +1714,21 @@ Array [
         <td
           className="align-middle"
         >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
+        <td
+          className="align-middle"
+        >
           <span>
             Item 8
           </span>
@@ -1605,6 +1756,21 @@ Array [
       <tr
         role="row"
       >
+        <td
+          className="align-middle"
+        >
+          <input
+            checked={false}
+            onChange={[Function]}
+            style={
+              Object {
+                "cursor": "pointer",
+              }
+            }
+            title="Toggle Row Selected"
+            type="checkbox"
+          />
+        </td>
         <td
           className="align-middle"
         >

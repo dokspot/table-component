@@ -152,6 +152,35 @@ exports[`Storyshots Filter/GlobalFilter Default 1`] = `
 </div>
 `;
 
+exports[`Storyshots Filter/SelectFilter Default 1`] = `
+<select
+  className="form-control"
+  data-testid="input"
+  onChange={[Function]}
+>
+  <option
+    value=""
+  >
+    All
+  </option>
+  <option
+    value="type1"
+  >
+    type1
+  </option>
+  <option
+    value="type2"
+  >
+    type2
+  </option>
+  <option
+    value="type3"
+  >
+    type3
+  </option>
+</select>
+`;
+
 exports[`Storyshots Pagination/InputPage Default 1`] = `
 Array [
   <span

@@ -2,6 +2,7 @@ import { useState } from 'react'
 import { useAsyncDebounce } from 'react-table'
 import { Form } from 'react-bootstrap'
 import PropTypes from 'prop-types'
+import 'regenerator-runtime/runtime.js'
 
 export default function DefaultFilter({
   column: { filterValue, preFilteredRows, setFilter }

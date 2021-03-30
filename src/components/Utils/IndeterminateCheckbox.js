@@ -16,6 +16,6 @@ export default forwardRef(
       }
     }, [resolvedRef, indeterminate])
 
-    return (<input type="checkbox" ref={resolvedRef} {...rest} />)
+    return (<input type='checkbox' data-testid='checkbox' ref={resolvedRef} {...rest} />)
   }
 )

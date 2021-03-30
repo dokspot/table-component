@@ -1,9 +1,10 @@
 /* eslint-disable react-hooks/rules-of-hooks */
 import { Table } from 'react-bootstrap'
 import Cell from '../Cell/Cell'
-import Toolbar from '../Toolbar/Toolbar'
 import Pagination from '../Pagination/Pagination'
+import Toolbar from '../Toolbar/Toolbar'
 import FilterToolbar from '../Toolbar/FilterToolbar/FilterToolbar'
+import SelectionToolbar from '../Toolbar/SelectionToolbar'
 import PropTypes from 'prop-types'
 import { useTable, useFilters, useGlobalFilter, usePagination, useRowSelect } from 'react-table'
 import useSelectionColumn from '../Hooks/useSelectionColumn'
@@ -25,7 +26,7 @@ function LoadingRow() {
   )
 }
 
-export default function TableComponent({ loading, useData, useColumns }) {
+export default function TableComponent({ loading, useData, useColumns, useActions }) {
   const tableInstance = useTable(
     { data: useData(), columns: useColumns() },
     useFilters,
@@ -50,6 +51,7 @@ export default function TableComponent({ loading, useData, useColumns }) {
     setPageSize,
     preGlobalFilteredRows,
     setGlobalFilter,
+    selectedFlatRows,
     state: { pageIndex, pageSize, filters, globalFilter }
   } = tableInstance
 
@@ -68,25 +70,35 @@ export default function TableComponent({ loading, useData, useColumns }) {
   return (
     <>
       <Toolbar>
-        <FilterToolbar
-           headerGroups={headerGroups}
-           preGlobalFilteredRows={preGlobalFilteredRows}
-           globalFilter={globalFilter}
-           setGlobalFilter={setGlobalFilter}
-           filters={filters}
-        />
-        <Pagination
-          rows={rows}
-          canNextPage={canNextPage}
-          canPreviousPage={canPreviousPage}
-          gotoPage={gotoPage}
-          nextPage={nextPage}
-          pageCount={pageCount}
-          pageIndex={pageIndex}
-          pageSize={pageSize}
-          setPageSize={setPageSize}
-          previousPage={previousPage}
-        />
+        {selectedFlatRows.length > 0
+          ? <>
+            <SelectionToolbar
+              selectedFlatRows={selectedFlatRows}
+              useActions={useActions}
+            />
+          </>
+          : <>
+            <FilterToolbar
+              headerGroups={headerGroups}
+              preGlobalFilteredRows={preGlobalFilteredRows}
+              globalFilter={globalFilter}
+              setGlobalFilter={setGlobalFilter}
+              filters={filters}
+            />
+            <Pagination
+              rows={rows}
+              canNextPage={canNextPage}
+              canPreviousPage={canPreviousPage}
+              gotoPage={gotoPage}
+              nextPage={nextPage}
+              pageCount={pageCount}
+              pageIndex={pageIndex}
+              pageSize={pageSize}
+              setPageSize={setPageSize}
+              previousPage={previousPage}
+            />
+          </>
+        }
       </Toolbar>
       <Table hover {...getTableProps()}>
         <thead>
@@ -117,5 +129,5 @@ TableComponent.propTypes = {
   loading: PropTypes.bool.isRequired,
   useData: PropTypes.func.isRequired,
   useColumns: PropTypes.func.isRequired,
-  useActions: PropTypes.array
+  useActions: PropTypes.func
 }

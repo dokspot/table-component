@@ -2,6 +2,7 @@
 import TableComponent from './TableComponent'
 import useData from '../../data/hooks/useData'
 import useColumns from '../../data/hooks/useColumns'
+import useActions from '../../data/hooks/useActions'
 
 export default {
   component: TableComponent,
@@ -14,12 +15,14 @@ export const Default = Template.bind({})
 Default.args = {
   loading: false,
   useData,
-  useColumns
+  useColumns,
+  useActions
 }
 
 export const Loading = Template.bind({})
 Loading.args = {
   loading: true,
   useData,
-  useColumns
+  useColumns,
+  useActions
 }

@@ -5,11 +5,17 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import TableComponent from './components/Table/TableComponent'
 import useData from './data/hooks/useData'
 import useColumns from './data/hooks/useColumns'
+import useActions from './data/hooks/useActions'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <TableComponent useData={useData} useColumns={useColumns} loading={false} />
+    <TableComponent
+      loading={false}
+      useData={useData} 
+      useColumns={useColumns}
+      useActions={useActions}
+    />
   </React.StrictMode>,
   document.getElementById('root')
 );

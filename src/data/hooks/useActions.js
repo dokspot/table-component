@@ -4,12 +4,12 @@ export default function useActions() {
   return useMemo(() => [
     {
       name: 'Action 1',
-      action: jest.fn(),
+      action: () => {},
       defaults: {}
     },
     {
       name: 'Action 2',
-      action: jest.fn(),
+      action: () => {},
       defaults: {}
     }
   ], [])

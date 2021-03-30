@@ -30,7 +30,7 @@ test('SelectionToolbar : Actions', () => {
       useActions={useActions}
     />
   )
-  expect(screen.getByTestId('selection-count')).toHaveTextContent('4 Selected Items')
+  expect(screen.getByTestId('selection-count')).toHaveTextContent('4 record(s) selected')
   expect(screen.queryAllByTestId('action-btn').length).toBe(3)
 })
 

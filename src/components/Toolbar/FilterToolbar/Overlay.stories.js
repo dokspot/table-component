@@ -1,8 +1,4 @@
 /* eslint-disable import/no-anonymous-default-export */
-// import { renderHook } from '@testing-library/react-hooks'
-// import useColumns from '../../../data/hooks/useColumns'
-// import useData from '../../../data/hooks/useData'
-// import { makeRenderer } from 'react-table'
 import Overlay from './Overlay'
 
 export default {

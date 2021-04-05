@@ -6,9 +6,11 @@ import Toolbar from '../Toolbar/Toolbar'
 import FilterToolbar from '../Toolbar/FilterToolbar/FilterToolbar'
 import SelectionToolbar from '../Toolbar/SelectionToolbar'
 import PropTypes from 'prop-types'
-import { useTable, useFilters, useGlobalFilter, usePagination, useRowSelect } from 'react-table'
+import { useTable, useFilters, useGlobalFilter, usePagination, useRowSelect, useSortBy } from 'react-table'
 import useSelectionColumn from '../Hooks/useSelectionColumn'
 import { times } from 'lodash'
+import { ArrowDropUp } from '@styled-icons/material/ArrowDropUp'
+import { ArrowDropDown } from '@styled-icons/material/ArrowDropDown'
 
 function LoadingHeader() {
   return (
@@ -31,6 +33,7 @@ export default function TableComponent({ loading, useData, useColumns, useAction
     { data: useData(), columns: useColumns() },
     useFilters,
     useGlobalFilter,
+    useSortBy,
     usePagination,
     useRowSelect,
     hooks => useSelectionColumn(hooks)
@@ -100,12 +103,22 @@ export default function TableComponent({ loading, useData, useColumns, useAction
           </>
         }
       </Toolbar>
-      <Table hover {...getTableProps()}>
+      <Table hover responsive {...getTableProps()}>
         <thead>
           {headerGroups.map((headerGroup) => (
             <tr {...headerGroup.getHeaderGroupProps()}>
               { headerGroup.headers.map((column) => (
-                <th {...column.getHeaderProps()}>{column.render('Header')}</th>
+                <th {...column.getHeaderProps(column.getSortByToggleProps())}>
+                  {column.render('Header')}
+                  <span>
+                    {column.isSorted
+                      ? column.isSortedDesc
+                        ? <ArrowDropDown size={12} />
+                        : <ArrowDropUp size={12} />
+                      : ' '
+                    }
+                  </span>
+                </th>
               ))}
             </tr>
           ))}

@@ -1301,516 +1301,558 @@ Array [
       </div>
     </div>
   </div>,
-  <table
-    className="table table-hover"
-    role="table"
+  <div
+    className="table-responsive"
   >
-    <thead>
-      <tr
-        role="row"
-      >
-        <th
-          colSpan={1}
-          role="columnheader"
-        >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
-              }
-            }
-            title="Toggle All Current Page Rows Selected"
-            type="checkbox"
-          />
-        </th>
-        <th
-          colSpan={1}
-          role="columnheader"
-        >
-          Name
-        </th>
-        <th
-          colSpan={1}
-          role="columnheader"
-        >
-          State
-        </th>
-        <th
-          colSpan={1}
-          role="columnheader"
-        >
-          Tooltip
-        </th>
-      </tr>
-    </thead>
-    <tbody
-      role="rowgroup"
+    <table
+      className="table table-hover"
+      role="table"
     >
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
+      <thead>
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
+          <th
+            colSpan={1}
+            role="columnheader"
+            style={
+              Object {
+                "cursor": undefined,
+              }
+            }
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+              title="Toggle All Current Page Rows Selected"
+              type="checkbox"
+            />
+            <span>
+               
+            </span>
+          </th>
+          <th
+            colSpan={1}
+            onClick={[Function]}
+            role="columnheader"
             style={
               Object {
                 "cursor": "pointer",
               }
             }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 0
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            private
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+            title="Toggle SortBy"
           >
-            0
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
-        >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
+            Name
+            <span>
+               
+            </span>
+          </th>
+          <th
+            colSpan={1}
+            onClick={[Function]}
+            role="columnheader"
             style={
               Object {
                 "cursor": "pointer",
               }
             }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 1
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            public
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+            title="Toggle SortBy"
           >
-            1
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
-        >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
+            State
+            <span>
+               
+            </span>
+          </th>
+          <th
+            colSpan={1}
+            onClick={[Function]}
+            role="columnheader"
             style={
               Object {
                 "cursor": "pointer",
               }
             }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 2
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            private
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+            title="Toggle SortBy"
           >
-            2
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
+            Tooltip
+            <span>
+               
+            </span>
+          </th>
+        </tr>
+      </thead>
+      <tbody
+        role="rowgroup"
       >
-        <td
-          className="align-middle"
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
-              }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 3
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            public
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+          <td
+            className="align-middle"
           >
-            3
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
-        >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
               }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 4
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            private
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
           >
-            4
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
+            <span>
+              Item 0
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              private
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              0
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
               }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 5
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            public
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
           >
-            5
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
+            <span>
+              Item 1
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              public
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              1
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
               }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 6
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            private
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
           >
-            6
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
+            <span>
+              Item 2
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              private
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              2
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
               }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 7
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            public
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
           >
-            7
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
+            <span>
+              Item 3
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              public
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              3
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
               }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 8
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            private
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
           >
-            8
-          </div>
-        </td>
-      </tr>
-      <tr
-        role="row"
-      >
-        <td
-          className="align-middle"
+            <span>
+              Item 4
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              private
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              4
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
         >
-          <input
-            checked={false}
-            data-testid="checkbox"
-            onChange={[Function]}
-            style={
-              Object {
-                "cursor": "pointer",
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
               }
-            }
-            title="Toggle Row Selected"
-            type="checkbox"
-          />
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            Item 9
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span>
-            public
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <div
-            onBlur={[Function]}
-            onFocus={[Function]}
-            onMouseOut={[Function]}
-            onMouseOver={[Function]}
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
           >
-            9
-          </div>
-        </td>
-      </tr>
-    </tbody>
-  </table>,
+            <span>
+              Item 5
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              public
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              5
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
+        >
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              Item 6
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              private
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              6
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
+        >
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              Item 7
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              public
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              7
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
+        >
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              Item 8
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              private
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              8
+            </div>
+          </td>
+        </tr>
+        <tr
+          role="row"
+        >
+          <td
+            className="align-middle"
+          >
+            <input
+              checked={false}
+              data-testid="checkbox"
+              onChange={[Function]}
+              style={
+                Object {
+                  "cursor": "pointer",
+                }
+              }
+              title="Toggle Row Selected"
+              type="checkbox"
+            />
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              Item 9
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <span>
+              public
+            </span>
+          </td>
+          <td
+            className="align-middle"
+          >
+            <div
+              onBlur={[Function]}
+              onFocus={[Function]}
+              onMouseOut={[Function]}
+              onMouseOver={[Function]}
+            >
+              9
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>,
 ]
 `;
 

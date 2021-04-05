@@ -10,14 +10,16 @@ export default function useColumns() {
       Header: 'Name',
       Cell: cellInfo => <TextCell loading={false} text={cellInfo.value} />,
       accessor: 'name',
-      Filter: DefaultFilter
+      Filter: DefaultFilter,
+      canSort: true
     },
     {
       Header: 'State',
       Cell: cellInfo => <TextCell loading={false} text={cellInfo.value} />,
       accessor: 'state',
       Filter: SelectFilter,
-      filter: 'includes'
+      filter: 'includes',
+      
     },
     {
       Header: 'Tooltip',

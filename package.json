@@ -5,7 +5,7 @@
   "author": "dokspot",
   "repository": {
     "type": "git",
-    "url": "https://github.com/dokspot/table"
+    "url": "git+https://github.com/dokspot/table.git"
   },
   "bugs": {
     "url": "https://github.com/dokspot/table/issues"
@@ -64,5 +64,7 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
     "react-test-renderer": "^17.0.2"
-  }
+  },
+  "homepage": "https://github.com/dokspot/table#readme",
+  "main": "index.js"
 }

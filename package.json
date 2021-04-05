@@ -11,7 +11,7 @@
     "url": "https://github.com/chromaui/intro-storybook-react-template/issues"
   },
   "license": "MIT",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@styled-icons/material": "^10.28.0",
     "@testing-library/jest-dom": "^5.11.4",

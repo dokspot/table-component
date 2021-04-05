@@ -1,3 +1,4 @@
+[![Node.js Package](https://github.com/dokspot/table/actions/workflows/npm-publish.yml/badge.svg)](https://github.com/dokspot/table/actions/workflows/npm-publish.yml)
 
 <p align="center">
   <a href="https://www.chromatic.com/">

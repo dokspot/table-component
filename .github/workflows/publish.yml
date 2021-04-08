@@ -4,8 +4,9 @@
 name: Publish
 
 on:
-  release:
-    types: [created]
+  push:
+    branches:
+      - main
 
 jobs:
   build:
@@ -18,8 +19,23 @@ jobs:
       - run: yarn install --frozen-lockfile
       - run: yarn test --coverage
 
-  publish-npm:
+  test:
     needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: yarn install --frozen-lockfile
+      - run: yarn test --coverage
+      - uses: codacy/codacy-coverage-reporter-action@master
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          coverage-reports: coverage/lcov.info
+
+  publish-npm:
+    needs: test
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -34,6 +50,3 @@ jobs:
           NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
-      # - run: yarn publish --access public
-      #   env:
-      #     NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}

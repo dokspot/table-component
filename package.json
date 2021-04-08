@@ -2,7 +2,7 @@
   "name": "@dokspot/table",
   "version": "0.0.0-development",
   "description": "React able component",
-  "author": "dokspot",
+  "author": "cderche",
   "repository": {
     "type": "git",
     "url": "https://github.com/dokspot/table.git"

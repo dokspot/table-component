@@ -44,4 +44,4 @@ jobs:
           registry-url: https://registry.npmjs.org/
       - run: yarn install --frozen-lockfile
       - run: yarn build
-      - name: yarn semantic-release
+      - run: yarn semantic-release

@@ -59,12 +59,21 @@
     "@storybook/preset-create-react-app": "^3.1.5",
     "@storybook/preset-scss": "^1.0.3",
     "@storybook/react": "^6.1.15",
-    "@testing-library/react-hooks": "^5.1.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
+    "@testing-library/react-hooks": "^5.1.1",
     "@testing-library/user-event": "^12.1.10",
-    "react-test-renderer": "^17.0.2"
+    "react-test-renderer": "^17.0.2",
+    "semantic-release": "^17.4.2"
   },
+  "plugins": [
+    "@semantic-release/commit-analyzer",
+    "@semantic-release/release-notes-generator",
+    "@semantic-release/changelog",
+    "@semantic-release/github",
+    "@semantic-release/npm",
+    "@semantic-release/git"
+  ],
   "homepage": "https://github.com/dokspot/table#readme",
   "main": "index.js"
 }

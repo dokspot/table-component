@@ -74,6 +74,9 @@
     "@semantic-release/npm",
     "@semantic-release/git"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/dokspot/table#readme",
   "main": "index.js"
 }

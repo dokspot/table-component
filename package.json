@@ -1,11 +1,11 @@
 {
   "name": "@dokspot/table",
-  "version": "0.1.0",
-  "description": "Table component for react.",
-  "author": "dokspot",
+  "version": "0.0.0-development",
+  "description": "React able component",
+  "author": "cderche",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dokspot/table.git"
+    "url": "https://github.com/dokspot/table.git"
   },
   "bugs": {
     "url": "https://github.com/dokspot/table/issues"
@@ -30,7 +30,8 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "semantic-release": "semantic-release"
   },
   "eslintConfig": {
     "extends": [
@@ -74,6 +75,9 @@
     "@semantic-release/npm",
     "@semantic-release/git"
   ],
+  "publishConfig": {
+    "access": "public"
+  },
   "homepage": "https://github.com/dokspot/table#readme",
   "main": "index.js"
 }

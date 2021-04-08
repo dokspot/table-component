@@ -6,7 +6,7 @@ name: Publish
 on:
   push:
     branches:
-      - main
+      - master
 
 jobs:
   build:
@@ -17,7 +17,6 @@ jobs:
         with:
           node-version: 12
       - run: yarn install --frozen-lockfile
-      - run: yarn test --coverage
 
   test:
     needs: build
@@ -34,7 +33,7 @@ jobs:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: coverage/lcov.info
 
-  publish-npm:
+  publish:
     needs: test
     runs-on: ubuntu-latest
     steps:

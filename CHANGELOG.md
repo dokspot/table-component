@@ -1,3 +1,15 @@
+# v0.1.11 (Fri Apr 09 2021)
+
+#### 🐛 Bug Fix
+
+- Storybook deployer [#4](https://github.com/dokspot/table-component/pull/4) ([@cderche](https://github.com/cderche))
+
+#### Authors: 1
+
+- cyrille ([@cderche](https://github.com/cderche))
+
+---
+
 # v0.1.10 (Fri Apr 09 2021)
 
 #### ⚠️ Pushed to `master`

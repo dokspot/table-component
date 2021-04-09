@@ -1,6 +1,6 @@
 {
   "name": "@dokspot/table",
-  "version": "0.0.0-development",
+  "version": "0.1.0",
   "description": "React table component",
   "author": "dokspot",
   "repository": "https://github.com/dokspot/table.git",

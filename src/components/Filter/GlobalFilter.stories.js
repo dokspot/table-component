@@ -7,7 +7,7 @@ export default {
   argTypes: { setGlobalFilter: { action: 'setGlobalFilter' } }
 }
 
-const Template = args => <GlobalFilter {...args} />
+const Template = (args) => <GlobalFilter {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

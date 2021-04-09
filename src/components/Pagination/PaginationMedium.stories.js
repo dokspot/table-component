@@ -7,7 +7,7 @@ export default {
   argTypes: { gotoPage: { action: 'gotoPage' } }
 }
 
-const Template = args => <PaginationMedium {...args} />
+const Template = (args) => <PaginationMedium {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

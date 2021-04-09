@@ -3,7 +3,7 @@ import IndeterminateCheckbox from '../Utils/IndeterminateCheckbox'
 import Cell from '../Cell/Cell'
 
 export default function useSelectColumn(hooks) {
-  hooks.visibleColumns.push(columns => [
+  hooks.visibleColumns.push((columns) => [
     // Let's make a column for selection
     {
       id: 'selection',

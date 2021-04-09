@@ -6,7 +6,7 @@ export default {
   title: 'Cell/TooltipCell'
 }
 
-const Template = args => <TooltipCell {...args} />
+const Template = (args) => <TooltipCell {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

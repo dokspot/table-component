@@ -7,7 +7,7 @@ export default {
   argTypes: {  gotoPage: { action: 'gotoPage' } }
 }
 
-const Template = args => <InputPage {...args} />
+const Template = (args) => <InputPage {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

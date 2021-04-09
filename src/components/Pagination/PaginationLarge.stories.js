@@ -11,7 +11,7 @@ export default {
   }
 }
 
-const Template = args => <PaginationLarge {...args} />
+const Template = (args) => <PaginationLarge {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

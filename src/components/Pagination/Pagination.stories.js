@@ -13,11 +13,11 @@ export default {
   }
 }
 
-const Template = args => <Pagination {...args} />
+const Template = (args) => <Pagination {...args} />
 
 export const Medium = Template.bind({})
 Medium.args = {
-  rows: times(50, n => n),
+  rows: times(50, (n) => n),
   canPreviousPage: false,
   canNextPage: true,
   pageCount: 5,
@@ -27,7 +27,7 @@ Medium.args = {
 
 export const Large = Template.bind({})
 Large.args = {
-  rows: times(200, n => n),
+  rows: times(200, (n) => n),
   canPreviousPage: false,
   canNextPage: true,
   pageCount: 20,

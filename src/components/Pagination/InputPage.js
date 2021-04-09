@@ -16,7 +16,7 @@ export default function InputPage({
         defaultValue={pageIndex + 1}
         min={1}
         max={pageCount}
-        onChange={e => {
+        onChange={(e) => {
           const page = e.target.value ? Number(e.target.value) - 1 : 0
           gotoPage(page)
         }}

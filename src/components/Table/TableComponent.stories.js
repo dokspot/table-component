@@ -9,7 +9,7 @@ export default {
   title: 'TableComponent'
 }
 
-const Template = args => <TableComponent {...args} />
+const Template = (args) => <TableComponent {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

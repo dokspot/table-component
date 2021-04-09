@@ -7,7 +7,7 @@ export default {
   argTypes: { gotoPage: { action: 'gotoPage' } }
 }
 
-const Template = args => <PaginationFL2 {...args} />
+const Template = (args) => <PaginationFL2 {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

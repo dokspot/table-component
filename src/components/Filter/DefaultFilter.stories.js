@@ -9,7 +9,7 @@ export default {
 
 const events = actions({ setFilter: 'setFilter' })
 
-const Template = args => <DefaultFilter {...args} />
+const Template = (args) => <DefaultFilter {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

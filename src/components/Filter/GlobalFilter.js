@@ -11,7 +11,7 @@ export default function GlobalFilter({
 }) {
   const count = preGlobalFilteredRows.length
   const [value, setValue] = useState(globalFilter)
-  const onChange = useAsyncDebounce(value => {
+  const onChange = useAsyncDebounce((value) => {
     setGlobalFilter(value || undefined)
   }, 200)
   return (
@@ -21,7 +21,7 @@ export default function GlobalFilter({
       </InputGroup.Prepend>
       <Form.Control
         value={value || ''}
-        onChange={e => {
+        onChange={(e) => {
           setValue(e.target.value)
           onChange(e.target.value)
         }}

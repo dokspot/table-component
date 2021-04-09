@@ -12,7 +12,7 @@ export default function SelectFilter({
   // using the preFilteredRows
   const options = useMemo(() => {
     const options = new Set()
-    preFilteredRows.forEach(row => {
+    preFilteredRows.forEach((row) => {
       options.add(row.values[id])
     })
     return [...options.values()]
@@ -24,7 +24,7 @@ export default function SelectFilter({
       as='select'
       value={value}
       data-testid='input'
-      onChange={e => {
+      onChange={(e) => {
         setValue(e.target.value || undefined)
         setFilter(e.target.value || undefined)
       }}

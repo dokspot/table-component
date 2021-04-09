@@ -12,7 +12,10 @@
   "dependencies": {
     "@styled-icons/material": "^10.28.0",
     "bootstrap": "^4.6.0",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
     "lodash": "^4.17.21",
+    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
@@ -28,7 +31,6 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "semantic-release": "semantic-release",
     "release": "auto shipit --base-branch=master"
   },
   "eslintConfig": {
@@ -65,17 +67,8 @@
     "@testing-library/user-event": "^12.1.10",
     "auto": "^10.24.3",
     "cross-env": "^7.0.3",
-    "react-test-renderer": "^17.0.2",
-    "semantic-release": "^17.4.2"
+    "react-test-renderer": "^17.0.2"
   },
-  "plugins": [
-    "@semantic-release/commit-analyzer",
-    "@semantic-release/release-notes-generator",
-    "@semantic-release/changelog",
-    "@semantic-release/github",
-    "@semantic-release/npm",
-    "@semantic-release/git"
-  ],
   "publishConfig": {
     "access": "public"
   },
@@ -88,6 +81,16 @@
           "absoluteRuntime": false
         }
       ]
+    ]
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx,json,css,scss,md}": [
+      "prettier --write"
     ]
   },
   "main": "dist/index.js"

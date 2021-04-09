@@ -9,7 +9,7 @@ export default {
   title: 'Toolbar/SelectionToolbar'
 }
 
-const Template = args => <SelectionToolbar {...args} />
+const Template = (args) => <SelectionToolbar {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

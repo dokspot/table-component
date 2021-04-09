@@ -12,7 +12,7 @@ export default {
   title: 'Toolbar'
 }
 
-const Template = args => <Toolbar {...args} />
+const Template = (args) => <Toolbar {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

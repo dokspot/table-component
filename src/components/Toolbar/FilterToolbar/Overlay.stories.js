@@ -7,7 +7,7 @@ export default {
 }
 
 
-const Template = args => <Overlay {...args} />
+const Template = (args) => <Overlay {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

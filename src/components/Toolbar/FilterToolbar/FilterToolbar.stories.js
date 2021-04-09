@@ -10,7 +10,7 @@ export default {
 }
 
 
-const Template = args => <FilterToolbar {...args} />
+const Template = (args) => <FilterToolbar {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

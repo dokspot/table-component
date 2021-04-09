@@ -6,7 +6,7 @@ export default {
   title: 'Cell/BadgeCell'
 }
 
-const Template = args => <BadgeCell {...args} />
+const Template = (args) => <BadgeCell {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

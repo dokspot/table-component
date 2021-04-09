@@ -8,7 +8,7 @@ export default {
   argTypes: { setPageSize: { action: 'setPageSize' } }
 }
 
-const Template = args => <SelectPageSize {...args} />
+const Template = (args) => <SelectPageSize {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

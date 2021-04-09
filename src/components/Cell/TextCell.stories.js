@@ -6,7 +6,7 @@ export default {
   title: 'Cell/TextCell'
 }
 
-const Template = args => <TextCell {...args} />
+const Template = (args) => <TextCell {...args} />
 
 export const Default = Template.bind({})
 Default.args = {

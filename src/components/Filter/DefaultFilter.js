@@ -9,14 +9,14 @@ export default function DefaultFilter({
 }) {
   const count = preFilteredRows.length
   const [value, setValue] = useState(filterValue)
-  const onChange = useAsyncDebounce(value => {
+  const onChange = useAsyncDebounce((value) => {
     setFilter(value || undefined)
   }, 200)
 
   return (
     <Form.Control
       value={value || ''}
-      onChange={e => {
+      onChange={(e) => {
         setValue(e.target.value)
         onChange(e.target.value) // Set undefined to remove the filter entirely
       }}

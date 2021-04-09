@@ -28,7 +28,8 @@
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
     "build-storybook": "build-storybook -s public",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "release": "auto shipit --base-branch=master"
   },
   "eslintConfig": {
     "extends": [

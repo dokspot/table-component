@@ -1,4 +1,4 @@
-name: Distribute
+name: Release
 
 on:
   push:
@@ -30,7 +30,7 @@ jobs:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           coverage-reports: coverage/lcov.info
   
-  publish:
+  release:
     needs:
       - build
       - test
@@ -42,10 +42,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
-      - name: Install dependencies
-        run: yarn install --frozen-lockfile
-      - name: Release
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
-        run: yarn auto release
+      - run: yarn install --frozen-lockfile
+      - run: yarn build
+      - run: yarn release

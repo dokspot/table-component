@@ -15,7 +15,7 @@ import { ArrowDropDown } from '@styled-icons/material/ArrowDropDown'
 function LoadingHeader() {
   return (
     <tr>
-      {times(4, n => <th key={n}><span className='glow-text'>Loading</span></th>)}
+      {times(4, (n) => <th key={n}><span className='glow-text'>Loading</span></th>)}
     </tr>
   )
 }
@@ -23,7 +23,7 @@ function LoadingHeader() {
 function LoadingRow() {
   return (
     <tr>
-      {times(4, n => <Cell key={n} loading={true} />)}
+      {times(4, (n) => <Cell key={n} loading={true} />)}
     </tr>
   )
 }
@@ -64,7 +64,7 @@ export default function TableComponent({ loading, useData, useColumns, useAction
         <Toolbar></Toolbar>
         <Table>
           <thead><LoadingHeader /></thead>
-          <tbody>{times(10, n => <LoadingRow key={n} />)}</tbody>
+          <tbody>{times(10, (n) => <LoadingRow key={n} />)}</tbody>
         </Table>
       </>
     )

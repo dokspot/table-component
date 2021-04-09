@@ -13,7 +13,7 @@ export default function SelectPageSize({
         as='select'
         size='sm'
         value={pageSize}
-        onChange={e => {
+        onChange={(e) => {
           setPageSize(Number(e.target.value))
         }}
         style={{ width: '56px', display: 'inline' }}

@@ -1,3 +1,15 @@
+# v0.1.7 (Fri Apr 09 2021)
+
+#### 🐛 Bug Fix
+
+- Improvements [#2](https://github.com/dokspot/table-component/pull/2) ([@cderche](https://github.com/cderche))
+
+#### Authors: 1
+
+- cyrille ([@cderche](https://github.com/cderche))
+
+---
+
 # v0.1.1 (Fri Apr 09 2021)
 
 #### 🐛 Bug Fix

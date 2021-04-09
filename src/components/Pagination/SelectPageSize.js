@@ -19,7 +19,7 @@ export default function SelectPageSize({
         style={{ width: '56px', display: 'inline' }}
         data-testid='input'
       >
-        {[10, 20, 30, 40, 50].map(pageSize => (
+        {[10, 20, 30, 40, 50].map((pageSize) => (
           <option key={pageSize} value={pageSize}>{pageSize}</option>
         ))}
         <option value={rows.length}>All</option>

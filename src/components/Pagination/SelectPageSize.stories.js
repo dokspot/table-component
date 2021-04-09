@@ -12,6 +12,6 @@ const Template = (args) => <SelectPageSize {...args} />
 
 export const Default = Template.bind({})
 Default.args = {
-  rows: times(200, n => n),
+  rows: times(200, (n) => n),
   pageSize: 10,
 }

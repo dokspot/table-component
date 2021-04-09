@@ -36,7 +36,7 @@ export default function TableComponent({ loading, useData, useColumns, useAction
     useSortBy,
     usePagination,
     useRowSelect,
-    hooks => useSelectionColumn(hooks)
+    (hooks) => useSelectionColumn(hooks)
   )
   const {
     getTableProps,

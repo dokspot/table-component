@@ -9,6 +9,7 @@ body {
   100% {
     opacity: 1;
   }
+
   50% {
     opacity: 0.5;
   }
@@ -25,5 +26,5 @@ body {
 .toolbar {
   line-height: 56px;
   font-size: 0.875rem;
-  height: 56px
+  height: 56px;
 }

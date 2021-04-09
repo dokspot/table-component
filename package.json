@@ -1,11 +1,11 @@
 {
-  "name": "@dokspot/table",
+  "name": "@dokspot/table-component",
   "version": "0.1.0",
   "description": "React table component",
   "author": "dokspot",
-  "repository": "https://github.com/dokspot/table.git",
+  "repository": "https://github.com/dokspot/table-component.git",
   "bugs": {
-    "url": "https://github.com/dokspot/table/issues"
+    "url": "https://github.com/dokspot/table-component/issues"
   },
   "license": "MIT",
   "private": false,
@@ -78,7 +78,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "homepage": "https://github.com/dokspot/table#readme",
+  "homepage": "https://github.com/dokspot/table-component#readme",
   "babel": {
     "presets": [
       [

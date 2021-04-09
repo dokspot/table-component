@@ -1,12 +1,9 @@
 {
   "name": "@dokspot/table",
   "version": "0.0.0-development",
-  "description": "React able component",
-  "author": "cderche",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/dokspot/table.git"
-  },
+  "description": "React table component",
+  "author": "dokspot",
+  "repository": "https://github.com/dokspot/table.git",
   "bugs": {
     "url": "https://github.com/dokspot/table/issues"
   },
@@ -26,7 +23,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "storybook": "start-storybook -p 6006 -s public",
@@ -52,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@babel/cli": "^7.13.14",
     "@storybook/addon-actions": "^6.1.15",
     "@storybook/addon-essentials": "^6.1.15",
     "@storybook/addon-links": "^6.1.15",
@@ -64,6 +62,8 @@
     "@testing-library/react": "^11.1.0",
     "@testing-library/react-hooks": "^5.1.1",
     "@testing-library/user-event": "^12.1.10",
+    "auto": "^10.24.3",
+    "cross-env": "^7.0.3",
     "react-test-renderer": "^17.0.2",
     "semantic-release": "^17.4.2"
   },
@@ -79,5 +79,15 @@
     "access": "public"
   },
   "homepage": "https://github.com/dokspot/table#readme",
-  "main": "index.js"
+  "babel": {
+    "presets": [
+      [
+        "react-app",
+        {
+          "absoluteRuntime": false
+        }
+      ]
+    ]
+  },
+  "main": "dist/index.js"
 }

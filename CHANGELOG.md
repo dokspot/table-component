@@ -1,3 +1,15 @@
+# v0.1.13 (Fri Apr 09 2021)
+
+#### ⚠️ Pushed to `master`
+
+- remove index.html ([@cderche](https://github.com/cderche))
+
+#### Authors: 1
+
+- cyrille ([@cderche](https://github.com/cderche))
+
+---
+
 # v0.1.12 (Fri Apr 09 2021)
 
 #### ⚠️ Pushed to `master`

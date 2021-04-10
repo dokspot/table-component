@@ -1,12 +1,4 @@
-/* eslint-disable import/no-anonymous-default-export */
-import Cell from './Cell'
-import TextCell from './TextCell'
-import BadgeCell from './BadgeCell'
-import TooltipCell from './TooltipCell'
-
-export default {
-  Cell,
-  TextCell,
-  BadgeCell,
-  TooltipCell
-}
+export { default as Cell } from './Cell'
+export { default as TextCell } from './TextCell'
+export { default as BadgeCell } from './BadgeCell'
+export { default as TooltipCell } from './TooltipCell'

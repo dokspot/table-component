@@ -25,7 +25,6 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
     "build": "cross-env BABEL_ENV=production babel src -d dist",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -68,6 +67,7 @@
     "@testing-library/react-hooks": "^5.1.1",
     "@testing-library/user-event": "^12.1.10",
     "auto": "^10.24.3",
+    "babel-plugin-auto-import": "^1.1.0",
     "cross-env": "^7.0.3",
     "react-test-renderer": "^17.0.2"
   },
@@ -81,6 +81,19 @@
         "react-app",
         {
           "absoluteRuntime": false
+        }
+      ]
+    ],
+    "plugins": [
+      [
+        "auto-import",
+        {
+          "declarations": [
+            {
+              "default": "React",
+              "path": "react"
+            }
+          ]
         }
       ]
     ]

@@ -1,3 +1,15 @@
+# v0.1.14 (Sat Apr 10 2021)
+
+#### 🐛 Bug Fix
+
+- Playground [#5](https://github.com/dokspot/table-component/pull/5) ([@cderche](https://github.com/cderche))
+
+#### Authors: 1
+
+- cyrille ([@cderche](https://github.com/cderche))
+
+---
+
 # v0.1.13 (Fri Apr 09 2021)
 
 #### ⚠️ Pushed to `master`

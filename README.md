@@ -118,3 +118,34 @@ export default function Index() {
   )
 }
 ```
+
+## Built-In Components
+
+### TableComponent
+
+```javascript
+import { TableComponent } from '@dokspot/table-component'
+```
+
+### Cells
+
+To be used in `useColumns`.
+
+```javascript
+import { Cell } from '@dokspot/table-component'
+import { TextCell } from '@dokspot/table-component'
+import { BadgeCell } from '@dokspot/table-component'
+import { TooltipCell } from '@dokspot/table-component'
+```
+
+NOTE: Any custom Cell should be wrapped by `Cell`.
+
+### Filters
+
+To be used in `useColumns`.
+
+```javascript
+import { DefaultFilter } from '@dokspot/table-component'
+import { GlobalFilter } from '@dokspot/table-component'
+import { SelectFilter } from '@dokspot/table-component'
+```

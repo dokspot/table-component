@@ -2,6 +2,7 @@ import React from 'react'
 import { Form } from 'react-bootstrap'
 import PropTypes from 'prop-types'
 
+
 export default function InputPage({
   gotoPage,
   pageIndex,
@@ -13,7 +14,7 @@ export default function InputPage({
       <Form.Control
         type='number'
         size='sm'
-        defaultValue={pageIndex + 1}
+        value={pageIndex + 1}
         min={1}
         max={pageCount}
         onChange={(e) => {

@@ -1,3 +1,19 @@
+# v0.1.15 (Tue Apr 13 2021)
+
+#### 🐛 Bug Fix
+
+- imp: babel [#6](https://github.com/dokspot/table-component/pull/6) ([@cderche](https://github.com/cderche))
+
+#### ⚠️ Pushed to `master`
+
+- Update README.md ([@cderche](https://github.com/cderche))
+
+#### Authors: 1
+
+- cyrille ([@cderche](https://github.com/cderche))
+
+---
+
 # v0.1.14 (Sat Apr 10 2021)
 
 #### 🐛 Bug Fix

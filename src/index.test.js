@@ -9,7 +9,8 @@ test('Expect components to be exported.', () => {
     'TooltipCell',
     'DefaultFilter',
     'GlobalFilter',
-    'SelectFilter'
+    'SelectFilter',
+    'useApi'
   ]
   expect(Object.keys(result)).toEqual(expect.arrayContaining(expected))
 })

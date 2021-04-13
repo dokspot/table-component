@@ -65,7 +65,7 @@ exports[`Storyshots Cell/Cell Loading 1`] = `
   className="align-middle"
 >
   <span
-    className="glow-text"
+    className="sc-bdfBwQ hxOXTJ"
   >
     Loading
   </span>
@@ -191,7 +191,6 @@ Array [
   <input
     className="form-control form-control-sm"
     data-testid="input"
-    defaultValue={1}
     max={5}
     min={1}
     onChange={[Function]}
@@ -202,6 +201,7 @@ Array [
       }
     }
     type="number"
+    value={1}
   />,
 ]
 `;
@@ -399,7 +399,6 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
     <input
       className="form-control form-control-sm"
       data-testid="input"
-      defaultValue={1}
       max={20}
       min={1}
       onChange={[Function]}
@@ -410,6 +409,7 @@ exports[`Storyshots Pagination/Pagination Large 1`] = `
         }
       }
       type="number"
+      value={1}
     />
   </div>
 </div>
@@ -541,7 +541,6 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
     <input
       className="form-control form-control-sm"
       data-testid="input"
-      defaultValue={1}
       max={5}
       min={1}
       onChange={[Function]}
@@ -552,6 +551,7 @@ exports[`Storyshots Pagination/Pagination Medium 1`] = `
         }
       }
       type="number"
+      value={1}
     />
   </div>
 </div>
@@ -1000,7 +1000,7 @@ Array [
 exports[`Storyshots TableComponent Default 1`] = `
 Array [
   <div
-    className="d-flex justify-content-between toolbar"
+    className="sc-gsTCUz cclHZj d-flex justify-content-between"
   >
     <div
       className="d-flex justify-content-start align-items-center"
@@ -1286,7 +1286,6 @@ Array [
         <input
           className="form-control form-control-sm"
           data-testid="input"
-          defaultValue={1}
           max={20}
           min={1}
           onChange={[Function]}
@@ -1297,6 +1296,7 @@ Array [
             }
           }
           type="number"
+          value={1}
         />
       </div>
     </div>
@@ -1853,13 +1853,219 @@ Array [
       </tbody>
     </table>
   </div>,
+  <div
+    className="d-flex justify-content-end align-items-center text-muted"
+  >
+    <div
+      className="mr-2"
+    >
+      200
+       records
+    </div>
+    <span
+      className="mr-1"
+    >
+      Show:
+    </span>
+    <select
+      className="form-control form-control-sm"
+      data-testid="input"
+      onChange={[Function]}
+      style={
+        Object {
+          "display": "inline",
+          "width": "56px",
+        }
+      }
+      value={10}
+    >
+      <option
+        value={10}
+      >
+        10
+      </option>
+      <option
+        value={20}
+      >
+        20
+      </option>
+      <option
+        value={30}
+      >
+        30
+      </option>
+      <option
+        value={40}
+      >
+        40
+      </option>
+      <option
+        value={50}
+      >
+        50
+      </option>
+      <option
+        value={200}
+      >
+        All
+      </option>
+    </select>
+    <div
+      className="mr-2"
+    >
+      <div
+        className="btn-group btn-group-sm"
+        role="group"
+        style={
+          Object {
+            "verticalAlign": "inherit",
+          }
+        }
+      >
+        <button
+          className="btn btn-white"
+          data-testid="previousPage"
+          disabled={true}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 cKCFNq"
+            fill="currentColor"
+            focusable="false"
+            height={20}
+            viewBox="0 0 24 24"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M15.41 7.41L14 6l-6 6 6 6 1.41-1.41L10.83 12z"
+            />
+          </svg>
+        </button>
+        <button
+          className="text-primary btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          1
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          2
+        </button>
+        <button
+          className="btn btn-white"
+          disabled={true}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 cKCFNq"
+            fill="currentColor"
+            focusable="false"
+            height={16}
+            viewBox="0 0 24 24"
+            width={16}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M6 10c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm12 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2zm-6 0c-1.1 0-2 .9-2 2s.9 2 2 2 2-.9 2-2-.9-2-2-2z"
+            />
+          </svg>
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          19
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="button"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          20
+        </button>
+        <button
+          className="btn btn-white"
+          data-testid="nextPage"
+          disabled={false}
+          onClick={[Function]}
+          type="button"
+        >
+          <svg
+            aria-hidden="true"
+            className="StyledIconBase-ea9ulj-0 cKCFNq"
+            fill="currentColor"
+            focusable="false"
+            height={20}
+            viewBox="0 0 24 24"
+            width={20}
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 0h24v24H0z"
+              fill="none"
+            />
+            <path
+              d="M10 6L8.59 7.41 13.17 12l-4.58 4.59L10 18l6-6z"
+            />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div>
+      <span
+        className="mr-1"
+      >
+        Page:
+      </span>
+      <input
+        className="form-control form-control-sm"
+        data-testid="input"
+        max={20}
+        min={1}
+        onChange={[Function]}
+        style={
+          Object {
+            "display": "inline",
+            "width": "48px",
+          }
+        }
+        type="number"
+        value={1}
+      />
+    </div>
+  </div>,
 ]
 `;
 
 exports[`Storyshots TableComponent Loading 1`] = `
 Array [
   <div
-    className="d-flex justify-content-between toolbar"
+    className="sc-gsTCUz cclHZj d-flex justify-content-between"
   />,
   <table
     className="table"
@@ -1868,28 +2074,28 @@ Array [
       <tr>
         <th>
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
         </th>
         <th>
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
         </th>
         <th>
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
         </th>
         <th>
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1902,7 +2108,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1911,7 +2117,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1920,7 +2126,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1929,45 +2135,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1978,7 +2146,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1987,7 +2155,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -1996,7 +2164,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2005,45 +2173,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2054,7 +2184,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2063,7 +2193,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2072,7 +2202,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2081,45 +2211,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2130,7 +2222,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2139,7 +2231,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2148,7 +2240,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2157,45 +2249,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-      </tr>
-      <tr>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
-          >
-            Loading
-          </span>
-        </td>
-        <td
-          className="align-middle"
-        >
-          <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2206,7 +2260,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2215,7 +2269,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2224,7 +2278,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2233,7 +2287,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2244,7 +2298,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2253,7 +2307,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2262,7 +2316,7 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2271,7 +2325,159 @@ Array [
           className="align-middle"
         >
           <span
-            className="glow-text"
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+      </tr>
+      <tr>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
+          >
+            Loading
+          </span>
+        </td>
+        <td
+          className="align-middle"
+        >
+          <span
+            className="sc-bdfBwQ hxOXTJ"
           >
             Loading
           </span>
@@ -2284,7 +2490,7 @@ Array [
 
 exports[`Storyshots Toolbar Default 1`] = `
 <div
-  className="d-flex justify-content-between toolbar"
+  className="sc-gsTCUz cclHZj d-flex justify-content-between"
 >
   <div>
     Children
@@ -2294,7 +2500,7 @@ exports[`Storyshots Toolbar Default 1`] = `
 
 exports[`Storyshots Toolbar Filter 1`] = `
 <div
-  className="d-flex justify-content-between toolbar"
+  className="sc-gsTCUz cclHZj d-flex justify-content-between"
 >
   <div
     className="d-flex justify-content-start align-items-center"
@@ -2393,7 +2599,7 @@ exports[`Storyshots Toolbar Filter 1`] = `
 
 exports[`Storyshots Toolbar Filter N Pagination 1`] = `
 <div
-  className="d-flex justify-content-between toolbar"
+  className="sc-gsTCUz cclHZj d-flex justify-content-between"
 >
   <div
     className="d-flex justify-content-start align-items-center"
@@ -2612,7 +2818,6 @@ exports[`Storyshots Toolbar Filter N Pagination 1`] = `
       <input
         className="form-control form-control-sm"
         data-testid="input"
-        defaultValue={1}
         max={5}
         min={1}
         onChange={[Function]}
@@ -2623,6 +2828,7 @@ exports[`Storyshots Toolbar Filter N Pagination 1`] = `
           }
         }
         type="number"
+        value={1}
       />
     </div>
   </div>
@@ -2631,7 +2837,7 @@ exports[`Storyshots Toolbar Filter N Pagination 1`] = `
 
 exports[`Storyshots Toolbar Selection 1`] = `
 <div
-  className="d-flex justify-content-between toolbar"
+  className="sc-gsTCUz cclHZj d-flex justify-content-between"
 >
   <div
     className="bg-dark text-white pl-2 pr-1 selected-col w-100 rounded"

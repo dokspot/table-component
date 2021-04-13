@@ -11,11 +11,9 @@
   "private": false,
   "dependencies": {
     "@styled-icons/material": "^10.28.0",
+    "axios": "^0.21.1",
     "bootstrap": "^4.6.0",
-    "husky": "^6.0.0",
-    "lint-staged": "^10.5.4",
     "lodash": "^4.17.21",
-    "prettier": "^2.2.1",
     "react": "^17.0.1",
     "react-bootstrap": "^1.5.2",
     "react-dom": "^17.0.1",
@@ -53,6 +51,9 @@
   },
   "devDependencies": {
     "@babel/cli": "^7.13.14",
+    "@babel/core": "^7.13.15",
+    "@babel/preset-env": "^7.13.15",
+    "@babel/preset-react": "^7.13.13",
     "@storybook/addon-actions": "^6.1.15",
     "@storybook/addon-essentials": "^6.1.15",
     "@storybook/addon-links": "^6.1.15",
@@ -67,37 +68,16 @@
     "@testing-library/react-hooks": "^5.1.1",
     "@testing-library/user-event": "^12.1.10",
     "auto": "^10.24.3",
-    "babel-plugin-auto-import": "^1.1.0",
     "cross-env": "^7.0.3",
+    "husky": "^6.0.0",
+    "lint-staged": "^10.5.4",
+    "prettier": "^2.2.1",
     "react-test-renderer": "^17.0.2"
   },
   "publishConfig": {
     "access": "public"
   },
   "homepage": "https://github.com/dokspot/table-component#readme",
-  "babel": {
-    "presets": [
-      [
-        "react-app",
-        {
-          "absoluteRuntime": false
-        }
-      ]
-    ],
-    "plugins": [
-      [
-        "auto-import",
-        {
-          "declarations": [
-            {
-              "default": "React",
-              "path": "react"
-            }
-          ]
-        }
-      ]
-    ]
-  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

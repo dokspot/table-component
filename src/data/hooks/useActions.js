@@ -6,11 +6,6 @@ export default function useActions() {
       name: 'Action 1',
       action: () => {},
       defaults: {}
-    },
-    {
-      name: 'Action 2',
-      action: () => {},
-      defaults: {}
     }
   ], [])
 }

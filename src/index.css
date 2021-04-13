@@ -3,28 +3,3 @@ body {
   font-size: 14px;
   padding: 1rem;
 }
-
-@keyframes glow {
-  0%,
-  100% {
-    opacity: 1;
-  }
-
-  50% {
-    opacity: 0.5;
-  }
-}
-
-.glow-text {
-  animation: glow 1.5s ease-in-out infinite;
-  background: #eee;
-  color: transparent;
-  cursor: progress;
-  display: inline-block;
-}
-
-.toolbar {
-  line-height: 56px;
-  font-size: 0.875rem;
-  height: 56px;
-}

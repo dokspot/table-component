@@ -7,6 +7,7 @@ on:
 
 jobs:
   release:
+    name: Publish package
     runs-on: ubuntu-latest
     if: "!contains(github.event.head_commit.message, 'ci skip') && !contains(github.event.head_commit.message, 'skip ci')"
     steps:
@@ -36,3 +37,17 @@ jobs:
           yarn install --frozen-lockfile
           yarn build
           yarn release
+
+  storybook:
+    name: Deploy storybook
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: yarn install --frozen-lockfile
+      - name: Deploy storybook
+        env:
+          GH_TOKEN: ${{ github.actor }}:${{ secrets.GITHUB_TOKEN }}
+        run: yarn deploy-storybook --ci

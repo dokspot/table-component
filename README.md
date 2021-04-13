@@ -149,3 +149,31 @@ import { DefaultFilter } from '@dokspot/table-component'
 import { GlobalFilter } from '@dokspot/table-component'
 import { SelectFilter } from '@dokspot/table-component'
 ```
+
+### Hooks
+
+To be used when making api requests.
+
+```javascript
+import { useAPI } from '@dokspot/table-component'
+
+API_ENDPOINT = '/api/products'
+
+function useData(input) {
+  const output = useMemo(() => {
+    input.map(data => ({
+      ...data,
+      // preprocess data if required
+    }))
+  })
+  return output
+}
+
+export default function Index() {
+  const [data, isLoading] = useApi(API_ENDPOINT)
+
+  return (
+    <TableComponent loading={isLoading} useData={useData(data)} ...>
+  )
+}
+```

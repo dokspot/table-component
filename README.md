@@ -1,5 +1,4 @@
 [![Build](https://github.com/dokspot/table-component/actions/workflows/build.yml/badge.svg)](https://github.com/dokspot/table-component/actions/workflows/build.yml)
-[![Test](https://github.com/dokspot/table-component/actions/workflows/test.yml/badge.svg)](https://github.com/dokspot/table-component/actions/workflows/test.yml)
 [![Codacy Badge](https://app.codacy.com/project/badge/Grade/88d95a384ab74e77bbc8f1d1b33a09b5)](https://www.codacy.com/gh/dokspot/table-component/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=dokspot/table-component&amp;utm_campaign=Badge_Grade)
 [![Codacy Badge](https://app.codacy.com/project/badge/Coverage/88d95a384ab74e77bbc8f1d1b33a09b5)](https://www.codacy.com/gh/dokspot/table-component/dashboard?utm_source=github.com&utm_medium=referral&utm_content=dokspot/table-component&utm_campaign=Badge_Coverage)
 

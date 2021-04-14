@@ -44,12 +44,15 @@ function LoadingRow() {
 
 export default function TableComponent({
   loading,
-  useData,
-  useColumns,
-  useActions,
+  // useData,
+  // useColumns,
+  data,
+  columns,
+  actions,
 }) {
   const tableInstance = useTable(
-    { data: useData(), columns: useColumns() },
+    { data, columns },
+    // { data: useData, columns: useColumns },
     useFilters,
     useGlobalFilter,
     useSortBy,
@@ -102,7 +105,7 @@ export default function TableComponent({
           <>
             <SelectionToolbar
               selectedFlatRows={selectedFlatRows}
-              useActions={useActions}
+              actions={actions}
             />
           </>
         ) : (
@@ -181,7 +184,7 @@ export default function TableComponent({
 
 TableComponent.propTypes = {
   loading: PropTypes.bool.isRequired,
-  useData: PropTypes.func.isRequired,
-  useColumns: PropTypes.func.isRequired,
-  useActions: PropTypes.func,
+  data: PropTypes.array.isRequired,
+  columns: PropTypes.array.isRequired,
+  actions: PropTypes.array.isRequired,
 };

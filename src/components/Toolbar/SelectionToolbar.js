@@ -13,15 +13,15 @@ export function SelectionButton({ item, selectedFlatRows }) {
   )
 }
 
-export default function SelectionToolbar({ selectedFlatRows, useActions }) {
-  const actions = useActions() || []
+export default function SelectionToolbar({ selectedFlatRows, actions }) {
   return (
     <div className='bg-dark text-white pl-2 pr-1 selected-col w-100 rounded' data-testid='selection-toolbar'>
       <span data-testid='selection-count'>{Object.keys(selectedFlatRows).length} record(s) selected</span>
       <div className='float-right'>
+        { actions !== undefined ?
         <ButtonGroup size='sm' style={{ top: '-1px' }}>
           {actions.map((item, key) => (<SelectionButton key={key} item={item} selectedFlatRows={selectedFlatRows} />))}
-        </ButtonGroup>
+        </ButtonGroup> : <></> }
       </div>
     </div>
   )
@@ -29,5 +29,5 @@ export default function SelectionToolbar({ selectedFlatRows, useActions }) {
 
 SelectionToolbar.propTypes = {
   selectedFlatRows: PropTypes.array,
-  useActions: PropTypes.func
+  actions: PropTypes.array
 }

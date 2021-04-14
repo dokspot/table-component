@@ -14,9 +14,9 @@ const Template = (args) => <SelectionToolbar {...args} />
 export const Default = Template.bind({})
 Default.args = {
   selectedFlatRows: [1,2,3],
-  useActions: () => { return [{
+  actions: [{
     name: 'Sum',
     defaults: {},
     ...events
-  }] }
+  }]
 }

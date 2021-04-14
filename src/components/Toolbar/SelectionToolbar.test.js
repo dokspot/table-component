@@ -3,20 +3,17 @@ import { fireEvent, render, screen } from '@testing-library/react'
 import '@testing-library/jest-dom'
 import SelectionToolbar, { SelectionButton } from './SelectionToolbar'
 
-function useActions() {
-  const actions = useMemo(() => [
-    { name: 'Action 1', action: jest.fn(), defaults: {} },
-    { name: 'Action 2', action: jest.fn(), defaults: {} },
-    { name: 'Action 3', action: jest.fn(), defaults: {} },
-  ])
-  return actions
-}
+const actions = [
+  { name: 'Action 1', action: jest.fn(), defaults: {} },
+  { name: 'Action 2', action: jest.fn(), defaults: {} },
+  { name: 'Action 3', action: jest.fn(), defaults: {} },
+]
 
 test('SelectionToolbar : No Actions', () => {
   render(
     <SelectionToolbar
       selectedFlatRows={[]}
-      useActions={jest.fn()}
+      actions={[]}
     />
   )
   expect(screen.queryAllByTestId('action-btn').length).toBe(0)
@@ -27,7 +24,7 @@ test('SelectionToolbar : Actions', () => {
   render(
     <SelectionToolbar
       selectedFlatRows={[1, 2, 3, 4]}
-      useActions={useActions}
+      actions={actions}
     />
   )
   expect(screen.getByTestId('selection-count')).toHaveTextContent('4 record(s) selected')

@@ -1,28 +1,22 @@
 /* eslint-disable import/no-anonymous-default-export */
 import TableComponent from './TableComponent'
-import useData from '../../data/hooks/useData'
-import useColumns from '../../data/hooks/useColumns'
-import useActions from '../../data/hooks/useActions'
+import useData from '../../test/hooks/useData'
+import useColumns from '../../test/hooks/useColumns'
+import useActions from '../../test/hooks/useActions'
 
 export default {
   component: TableComponent,
   title: 'TableComponent'
 }
 
-const Template = (args) => <TableComponent {...args} />
+const Template = (args) => <TableComponent {...args} data={useData()} columns={useColumns()} actions={useActions()} />
 
 export const Default = Template.bind({})
 Default.args = {
-  loading: false,
-  useData,
-  useColumns,
-  useActions
+  loading: false
 }
 
 export const Loading = Template.bind({})
 Loading.args = {
-  loading: true,
-  useData,
-  useColumns,
-  useActions
+  loading: true
 }

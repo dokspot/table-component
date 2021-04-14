@@ -1,3 +1,15 @@
+# v0.1.16 (Wed Apr 14 2021)
+
+#### 🐛 Bug Fix
+
+- fix: use Hooks [#7](https://github.com/dokspot/table-component/pull/7) ([@cderche](https://github.com/cderche))
+
+#### Authors: 1
+
+- cyrille ([@cderche](https://github.com/cderche))
+
+---
+
 # v0.1.15 (Tue Apr 13 2021)
 
 #### 🐛 Bug Fix
